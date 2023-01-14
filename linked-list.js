@@ -1,4 +1,9 @@
-import Node from "./nodes.js";
+class Node {
+  constructor({ value = null, nextNode = null }) {
+    this.value = value;
+    this.nextNode = nextNode;
+  }
+}
 
 class LinkedList {
   constructor() {
@@ -22,7 +27,7 @@ class LinkedList {
     if (!this.head()) {
       this.headNode = new Node({ value, nextNode: null });
     } else {
-      new Node({ value, nextNode: head() });
+      this.headNode = new Node({ value, nextNode: this.head() });
     }
 
     this.length++;
@@ -178,16 +183,3 @@ class LinkedList {
     previousNode.nextNode = previousNode.nextNode.nextNode;
   }
 }
-
-const linkedList = new LinkedList();
-linkedList.append("Jaguar");
-linkedList.append("Domestic cat");
-linkedList.append("Lion");
-linkedList.append("Cheetah");
-console.log(linkedList.toString());
-linkedList.insertAt(2, "Cougar");
-console.log(linkedList.toString());
-linkedList.insertAt(1, "Tiger");
-console.log(linkedList.toString());
-linkedList.removeAt(3);
-console.log(linkedList.toString());
