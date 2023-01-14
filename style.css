@@ -1,0 +1,14 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+ul {
+  font-size: 1rem;
+}
+
+span.code {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 900;
+  background-color: lightgray;
+}
