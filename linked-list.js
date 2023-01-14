@@ -183,3 +183,9 @@ class LinkedList {
     previousNode.nextNode = previousNode.nextNode.nextNode;
   }
 }
+
+// The export is meant for Node.js but not browsers.
+// I wrapped it in a try/catch block in order to avoid the error message on the browser console.
+try {
+  module.exports = LinkedList;
+} catch {}
