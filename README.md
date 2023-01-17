@@ -26,4 +26,4 @@ and then run `node [path to test-methods.js]` to see the resulting output in the
 
 Tips:
  - Remember to use the `toString()` method often so that you can see what's going on.
- - If you're using Node, consider using [Nodemon](https://www.npmjs.com/package/nodemon) to re-run `test-methods.js` everytime you try a new method.
+ - If you're using Node, consider using [Nodemon](https://www.npmjs.com/package/nodemon) to re-run `test-methods.js` every time you try a new method.
